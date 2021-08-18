@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/536fe31d92.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        
+      
+        <div class="btn" >
+            <form name="f">
+                <button class="redaktor" type="button" name="exit"  id="home"><i class="fas fa-home" ></i></button>
+                <button class="redaktor tableCreate" type="button" name="tableCreate"><i class="fas fa-table"></i></button>
+                <button class="redaktor listUlCreate" type="button" name="listUlCreate"><i class="fas fa-list-ul"></i></button>
+                <button class="redaktor listOlcreate" type="button" name="listOlcreate"><i class="fas fa-list-ol"></i></button>
+            </form>
+        </div>
+        <div class="centrHead">
+        <div class="buttons">
+            <!-- <button class="redaktorMode" id="edit" ><i class="fas fa-folder-minus menu"></i></button> -->
+            <button class="redaktorMode" id="edit" disabled><i class="fas fa-folder-minus menu"></i></button>
+        </div>
+        <div class="buttons">
+            <button class="boldButton"><i class="fas fa-bold"></i></button>
+            <button class="cursive"><i class="fas fa-italic"></i></button>
+            <button class="underlineButton"><i class="fas fa-underline"></i></button>
+            <button class="troughButton"><i class="fas fa-strikethrough"></i></button>
+        </div>
+        <div class="buttons">
+            <button class="posLeft"><i class="fas fa-align-left"></i></button>
+            <button class="posCenter"><i class="fas fa-align-center"></i></button>
+            <button class="posRight"><i class="fas fa-align-right"></i></button>
+        </div>
+        <div class="buttons">
+            <form name="f1">
+                <select name="sel"> 
+                    <option value="Arial">Arial</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="monospace">monospace</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+                <select name="size">
+                    <option selected>Розмір шрифту</option>
+                    <option value="12px">12px</option>
+                    <option value="14px">14px</option>
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="22px">22px</option>
+                    <option value="24px">24px</option>
+                
+                </select>
+                <button type="button"  class="textColors"><i class="fas fa-palette"></i></button>
+                <button type="button" class="bgCol"><i class="far fa-image"></i></button>
+            </form>
+        </div>
+        <div class="buttons">
+            <button class="logInBut"><i class="fas lock fa-lock"></i></button>
+        </div>
+    </div>
+    </header>
+    <main>
+
+        <div class="display" id="box" >
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+            <p>УВАГА ,Щоб розблокувати першу кнопку , нажміть на колодку і ведіть логін і пароль admin ,admin</p>
+           
+        </div>
+        <form name="ar">
+        <div class="forarea dispNone">
+        <textarea class="area" name="area"></textarea>
+        <div class="divArea dispNone">
+            <h2 style="text-align: center; padding: 10px; border-bottom: 1px solid #000;" >Create table</h2>
+            <div style="display: flex; margin: 1%;" >
+                <div class="crtTR">
+                    <p class="txt">Count Tr:</p>
+                    <input class="widInp" name="countTr" type="text" placeholder="type here...">
+                    <p class="txt">Width of Td</p>
+                    <input class="widInp" name="widTd" type="text" placeholder="type here...">
+                    <p class="txt">Width of border</p>
+                    <input class="widInp" name="widbor" type="text" placeholder="type here...">
+                    <input class="widInp btPad" name="btReset" type="button" value="reset">
+                </div>
+                <div class="crtTD">
+                    <p class="txt">Count Td:</p>
+                    <input class="widInp" name="countTd" type="text" placeholder="type here...">
+                    <p class="txt">Height of Td</p>
+                    <input class="widInp" name="heigTd" type="text" placeholder="type here..."> 
+                    <p class="txt">Style and color of border</p>
+                    <select class="inp" name="styleBorder" type="text" placeholder="choose style">
+                        <option id="1" selected value="" >Chose style</option>
+                        <option id="2" value="dotted">dotted</option>
+                        <option id='3' value="dashed">dashed</option>
+                        <option id="4" value="solid">solid</option>
+                        <option id="4" value="double">double</option>
+                        <option id="4" value="groove">groove</option>
+                        <option id="4" value="ridge">ridge</option>
+                        <option id="4" value="inset">inset</option>
+                        <option id="4" value="outset">outset</option>
+                    </select>
+                    <select class="inp" name="colorBorder" type="text" placeholder="choose color">
+                        <option id="1" selected value="" >Chose of color</option>
+                        <option id="2" value="black">black</option>
+                        <option id='3' value="red">red</option>
+                        <option id="4" value="green">green</option>
+                        <option id="4" value="blue">blue</option>
+                        <option id="4" value="yellow">yellow</option>
+                        <option id="4" value="white">white</option>
+                        <option id="4" value="gray">gray</option>
+                        <option id="4" value="pink">pink</option>
+                    </select>
+                    <input class="widInp btPad" name="crTbl" type="button" value="Create table">
+                </div>
+            </div>
+        </div>
+        <div class="blockOL dispNone">
+            <div style="width:80%">
+            <h2 style="text-align: center; padding: 10px; border-bottom: 1px solid #000;">Create Ol</h2>
+            <input type="text" name="valueOl" class="widInp forOl">
+            <select name="mark" id="disabledSelect" class="widInp forOl" >
+                <option id="1" selected value="" >Chose Ol type mark</option>
+                <option id="2" value="decimal">1</option>
+                <option id='3' value="upper-roman">I</option>
+                <option id="4" value="lower-roman">i</option>
+                <option id="5" value="upper-alpha">A</option>
+                <option id="6" value="upper-latin">a</option>
+            </select>
+            <div style="width: 100% ; display: flex; flex-direction: row; justify-content: space-between;">
+            <button type="button" class="forOlBut" name="resetOlBut">reset</button>
+            <button type="button" class="forOlBut" name="createOlBut">creat list</button>
+            </div>
+            </div>
+        </div>
+        <div class="blockUL dispNone">
+            <div style="width:80%">
+                <h2 style="text-align: center; padding: 10px; border-bottom: 1px solid #000;">Create Ul</h2>
+                <input type="text" name="valueUl" class="widInp forOl">
+                <select name="markUL" id="disabledSelect" class="widInp forOl" >
+                    <option id="1" selected value="" >Chose Ul type mark</option>
+                    <option id="2" value="circle">circle</option>
+                    <option id='3' value="disk">disk</option>
+                    <option id="4" value="square">square</option>
+                </select>
+                <div style="width: 100% ; display: flex; flex-direction: row; justify-content: space-between;">
+                <button type="button" class="forOlBut" name="resetUlBut">reset</button>
+                <button type="button" class="forOlBut" name="createUlBut">creat list</button>
+                </div>
+                </div>
+        </div>
+        </div>
+        </form>
+       
+                
+            <div class="colors dispNone">
+                <div class="change">
+                    <button class="changerBut color2">color</button>
+                    <button class="changerBut images2">images</button>
+                    <button class="changerBut files">files</button>
+                </div>
+                <div class="colorsBlock">
+                    <div class="col" id="red"></div>
+                    <div class="col" id="green"></div>
+                    <div class="col" id="blue"></div>
+                    <div class="col" id="purple"></div>
+                    <div class="col" id="yellow"></div>
+                    <div class="col" id="greenyellow"></div>
+                    <div class="col" id="honeydew"></div>
+                    <div class="col" id="hotpink"></div>
+                    <div class="col" id="indigo"></div>
+                    <div class="col" id="indianred"></div>
+                    <div class="col" id="orange"></div>
+                    <div class="col" id="lawngreen"></div>
+                    <div class="col" id="lightgreen"></div>
+                    <div class="col" id="lightGray"></div>
+                    <div class="col" id="gray"></div>
+                    <div class="col" id="lightslategrey"></div>
+                    <div class="col" id="black"></div>
+                    <div class="col" id="maroon"></div>
+                    <div class="col" id="mediumaquamarine"></div>
+                    <div class="col" id="mediumblue"></div>
+                    <div class="col" id="mediumorchid"></div>
+
+                </div>
+                <div class="img dispNone">
+                    <img class="images" id="9" src="img/9.jpg" alt="">
+                    <img class="images" id="8" src="img/8.jpg" alt="">
+                    <img class="images" id="7" src="img/7.jpg" alt="">
+                    <img class="images" id="6" src="img/6.jpg" alt="">
+                    <img class="images" id="5" src="img/5.jpg" alt="">
+                    <img class="images" id="4" src="img/4.jpg" alt="">
+                    <img class="images" id="3" src="img/3.jpg" alt="">
+                    <img class="images" id="2" src="img/2.jpg" alt="">
+                    <img class="images" id="1" src="img/1.jpg" alt="">
+                </div>
+                <div class="failes dispNone">
+                    <form name="file">
+                        <input class="file" type="file" name="file" value="Click" id="file">
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="login dispNone" >
+              <form name="forLog">
+                <h2 class="sign">Sign in</h2>
+                
+                <input class="loginInpt" type="text" name="textLog" placeholder="Login">
+                <input class="loginInpt" type="password" name="passLog" placeholder="Password">
+                <input class="loginInpt" type="button" name="logBut" value="Sign in">
+
+              </form>
+            </div>
+        
+ 
+    </main>
+
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
